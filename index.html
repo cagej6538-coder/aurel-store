@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111310" />
+  <meta name="description" content="AUREL — considered essentials, exceptional finds. Discover fashion, technology, sneakers and objects for everyday living." />
+  <title>AUREL — The Art of Shopping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="announcement"><span>THE AUREL EDIT</span><span>Thoughtful finds. Better everyday.</span><a href="#shop">Explore the collection <b>↗</b></a></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="AUREL home">
+      <span class="brand-mark"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 3 41 38H3L22 3Z" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m22 14 12 22H10l12-22Z" fill="currentColor"/><path d="M22 21v13" stroke="#111310" stroke-width="2"/></svg></span>
+      <span class="brand-word">AUREL<span>®</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#shop" data-nav="all">Discover</a><a href="#shop" data-nav="fashion">Fashion</a><a href="#shop" data-nav="tech">Technology</a><a href="#shop" data-nav="living">Living</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-open" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="icon-btn wishlist-open" aria-label="Wishlist">♡<i class="count" id="wishCount">0</i></button>
+      <button class="cart-trigger" id="cartOpen" aria-label="Open shopping bag"><svg viewBox="0 0 24 24"><path d="M4 8h16l-1.3 13H5.3L4 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span>Bag</span><b id="cartCount">0</b></button>
+      <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span> CURATED FOR YOUR EVERYDAY <span class="eyebrow-dot"></span> VOL. 01</div>
+        <h1>Good taste.<br><em>Great finds.</em></h1>
+        <p>A considered collection of things worth owning. Discover pieces that make the everyday feel exceptional.</p>
+        <div class="hero-buttons"><a class="btn btn-dark" href="#shop">Shop the collection <span>↗</span></a><a class="text-link" href="#story">Our point of view <span>↗</span></a></div>
+        <div class="hero-proof"><div class="proof-avatars"><span> A </span><span>J</span><span>M</span></div><span><b>Good finds,</b> thoughtfully selected.</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image" role="img" aria-label="Editorial fashion campaign"></div>
+        <div class="hero-image-overlay"></div>
+        <div class="hero-stamp"><span>THE NEW</span><b>STANDARD</b><small>EST. 2026 · LAGOS</small></div>
+        <div class="hero-side-note">OBJECTS OF DESIRE — 001 / 026</div>
+        <div class="hero-bottom-label"><span>01 — 04</span><span>THE AUREL SELECTION</span></div>
+      </div>
+      <div class="hero-scroll"><span></span> SCROLL TO DISCOVER</div>
+    </section>
+
+    <section class="ticker" aria-label="Store highlights"><div class="ticker-track"><span>CURATED, NOT CROWDED</span><b>✳</b><span>STYLE THAT STAYS</span><b>✳</b><span>THE EVERYDAY, ELEVATED</span><b>✳</b><span>CURATED, NOT CROWDED</span><b>✳</b><span>STYLE THAT STAYS</span><b>✳</b><span>THE EVERYDAY, ELEVATED</span><b>✳</b></div></section>
+
+    <section class="category-section section-pad">
+      <div class="section-heading reveal"><div><div class="eyebrow dark-eyebrow">A WORLD OF GOOD THINGS</div><h2>Find your <em>something.</em></h2></div><a class="text-link" href="#shop">View everything ↗</a></div>
+      <div class="category-grid">
+        <button class="category-card category-fashion reveal" data-category="fashion"><span class="category-number">01 / STYLE</span><span class="category-title">Wear it<br><em>well.</em></span><span class="category-cta">Explore fashion ↗</span></button>
+        <button class="category-card category-tech reveal" data-category="tech"><span class="category-number">02 / TECH</span><span class="category-title">Made for<br><em>more.</em></span><span class="category-cta">Explore tech ↗</span></button>
+        <button class="category-card category-living reveal" data-category="living"><span class="category-number">03 / LIVING</span><span class="category-title">Live a little<br><em>better.</em></span><span class="category-cta">Explore living ↗</span></button>
+      </div>
+    </section>
+
+    <section class="shop-section section-pad" id="shop">
+      <div class="shop-top reveal"><div><div class="eyebrow dark-eyebrow">THE GOOD STUFF</div><h2>Curated <em>for you.</em></h2><p>Less scrolling. Better choosing.</p></div><div class="shop-tools"><label class="search-box"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="productSearch" type="search" placeholder="Find your next favourite..." /></label><select id="sortProducts" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name: A–Z</option></select></div></div>
+      <div class="filter-row" id="filters"><button class="filter-chip active" data-filter="all">All finds <span>08</span></button><button class="filter-chip" data-filter="fashion">Fashion</button><button class="filter-chip" data-filter="tech">Technology</button><button class="filter-chip" data-filter="living">Living</button><button class="filter-chip" data-filter="accessories">Accessories</button><span class="results-label" id="resultsLabel">Showing 8 pieces</span></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>✳</span><h3>No finds just yet.</h3><p>Try another search or category.</p><button class="btn btn-dark" id="resetFilters">Reset filters</button></div>
+      <div class="shop-foot"><span>THOUGHTFULLY SELECTED. ALWAYS.</span><span>MORE GOOD THINGS COMING SOON ↗</span></div>
+    </section>
+
+    <section class="editorial" id="story">
+      <div class="editorial-image"></div>
+      <div class="editorial-copy reveal"><div class="eyebrow">A LITTLE ABOUT AUREL</div><h2>Buy less.<br><em>Choose better.</em></h2><p>We believe shopping should feel less like noise and more like discovery. AUREL brings together useful objects, standout design and everyday essentials — selected for quality, character and the way they make you feel.</p><a class="btn btn-light" href="#shop">Find your next favourite <span>↗</span></a><div class="editorial-index">AUREL JOURNAL / NOTE 001</div></div>
+    </section>
+
+    <section class="newsletter section-pad"><div class="newsletter-orbit">A</div><div class="newsletter-content reveal"><div class="eyebrow dark-eyebrow">THE AUREL LETTER</div><h2>A good thing<br>in your <em>inbox.</em></h2><p>New arrivals, thoughtful edits and the occasional very good find. No noise.</p><form id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">JOIN THE LIST ↗</button></form><small id="newsletterMessage">By subscribing, you agree to receive occasional AUREL updates.</small></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="brand footer-brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 44 44"><path d="M22 3 41 38H3L22 3Z" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m22 14 12 22H10l12-22Z" fill="currentColor"/></svg></span><span class="brand-word">AUREL<span>®</span></span></a><p>Good taste. Great finds.<br>Everyday, elevated.</p><a class="back-top" href="#top">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>© 2026 AUREL. ALL RIGHTS RESERVED.</span><span>MADE FOR THE CURIOUS.</span><span>DEMO STORE · LAGOS, NG</span></div></footer>
+
+  <div class="search-overlay" id="searchOverlay"><button class="overlay-close" id="searchClose" aria-label="Close search">×</button><div class="overlay-inner"><div class="eyebrow">WHAT ARE YOU LOOKING FOR?</div><input id="overlaySearch" type="search" placeholder="Search the AUREL collection..." /><p>Try “sneakers”, “audio” or “home”.</p></div></div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag"><div class="drawer-head"><div><div class="eyebrow dark-eyebrow">YOUR SELECTION</div><h3>Your bag <span id="drawerCount">(0)</span></h3></div><button class="drawer-close" id="cartClose" aria-label="Close bag">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-empty" id="cartEmpty"><span>♡</span><h4>Your bag is taking a breather.</h4><p>Find something worth bringing home.</p><button class="btn btn-dark" id="continueShopping">Explore the edit</button></div><div class="drawer-bottom" id="drawerBottom"><div class="subtotal"><span>Subtotal</span><b id="cartSubtotal">₦0</b></div><p>Shipping and taxes calculated at checkout.</p><button class="btn btn-dark checkout-btn" id="checkoutBtn">Continue to checkout <span>↗</span></button><small>Secure checkout experience · Demo mode</small></div></aside>
+  <div class="modal-backdrop" id="modalBackdrop"><div class="quick-modal" id="quickModal" role="dialog" aria-modal="true" aria-label="Product details"><button class="overlay-close modal-close" id="modalClose">×</button><div id="quickContent"></div></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
